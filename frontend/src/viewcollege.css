@@ -1,0 +1,107 @@
+body {
+    /* background: #1d1f20; */
+    /* text-align: center; */
+    /* color: #FFF; */
+    /* font: 12px/14px sans-serif; */
+}
+
+/* $led-size: 15px; */
+
+/* $succes: #00d563;
+$warning: #ffc400;
+$info: #4c84ff;
+$error: #fd2f51;
+$offline: #dfe1e9; */
+
+.indicator {
+    display: inline-block;
+    margin: 15px;
+
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    /* color: #fd2f51; */
+    background: #fd2f51;
+    /* border: 1px solid black; */
+    color: #fd2f51;
+    animation: blink 3s infinite;
+}
+
+.indicator1 {
+    display: inline-block;
+    margin: 15px;
+
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    /* color: #fd2f51; */
+    background: #e2ed0a;
+    /* border: 1px solid black; */
+    color: #fdde2f;
+    animation: blink 3s infinite;
+}
+
+.indicator2 {
+    display: inline-block;
+    margin: 15px;
+
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    /* color: #fd2f51; */
+    background: #fd2f51;
+    /* border: 1px solid black; */
+    color: #fd2f51;
+    animation: blink 3s infinite;
+}
+
+/* $indicator-array: succes info warning error offline;
+$colors: $succes $info $warning $error $offline; */
+
+
+@keyframes blink {
+    0% {
+        box-shadow: 0 0 4px 4px #360303;
+    }
+
+    25% {
+        box-shadow: 0 0 4px 4px;
+    }
+
+    50% {
+        box-shadow: 0 0 4px 4px #360303;
+    }
+
+    75% {
+        box-shadow: 0 0 4px 4px;
+    }
+
+    100% {
+        box-shadow: 0 0 4px 4px #360303;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Align items at the top */
+    z-index: 1000;
+}
+
+.modal-container {
+    background: white !important;
+    padding: 20px !important;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 61%) !important;
+    max-width: 50%;
+    max-height: 85vh;
+    overflow: auto;
+    margin-top: 12vh;
+}

@@ -1,0 +1,20 @@
+.tableheading {
+    font-size: 13px;
+        font-weight: 600;
+}
+
+.tabledata{
+    font-size: 13px;
+}
+
+.header-nav .nav-icon {
+    font-size: 22px;
+    color: #012970;
+    margin-right: 25px;
+    position: relative;
+}
+
+.feedback_table_head th{
+font-size: 12px;
+}
+
